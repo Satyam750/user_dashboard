@@ -2,7 +2,7 @@ import "./App.css"
 import Sidebar from "./components/sidebar/Sidebar"
 import Topbar from "./components/topbar/Topbar"
 import Home from "./pages/home/Home"
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {Route, Routes } from 'react-router-dom';
 import UserList from "./pages/userList/UserList";
 import User from "./pages/user/User";
 import NewUser from "./pages/newUser/NewUser";
@@ -12,7 +12,8 @@ import NewProduct from "./pages/newProduct/NewProduct";
 
 const App = () => {
   return (
-    <Router>
+    <> 
+   
       <Topbar />
       <div className="container">
         <Sidebar />
@@ -30,8 +31,7 @@ const App = () => {
 
       </div>
 
-
-    </Router>
+    </>
   )
 }
 
